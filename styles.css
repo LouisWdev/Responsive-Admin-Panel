@@ -280,6 +280,18 @@ main .analyse .sales svg circle{
     stroke-dasharray: 200;
 }
 
+main .analyse .visits svg circle{
+    stroke: var(--color-danger);
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+main .analyse .searches svg circle{
+    stroke: var(--color-primary);
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
 main .analyse .progress .percentage{
     position: absolute;
     top: -3px;
@@ -289,4 +301,38 @@ main .analyse .progress .percentage{
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+
+main .new-users{
+    margin-top: 1.3rem;
+}
+
+main .new-users .users-list{
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .new-users .users-list:hover{
+    box-shadow: none;
+}
+
+main .new-users .users-list .user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .new-users .users-list .user img{
+    width: 5rem;
+    height: 5rem;
 }
