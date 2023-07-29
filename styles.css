@@ -307,7 +307,7 @@ main .new-users{
     margin-top: 1.3rem;
 }
 
-main .new-users .users-list{
+main .new-users .user-list{
     background-color: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -321,18 +321,20 @@ main .new-users .users-list{
     transition: all 0.3s ease;
 }
 
-main .new-users .users-list:hover{
+main .new-users .user-list:hover{
     box-shadow: none;
 }
 
-main .new-users .users-list .user{
+main .new-users .user-list .user{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-main .new-users .users-list .user img{
+main .new-users .user-list .user img{
     width: 5rem;
     height: 5rem;
+    margin-bottom: 0.4rem;
+    border-radius: 50%;
 }
